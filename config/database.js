@@ -1,5 +1,5 @@
 const { Sequelize } = require('sequelize');
-const db = new Sequelize('postsdb', 'postgres', '12345', {
+const postsdb = new Sequelize('postsdb', 'postgres', '12345', {
     host: 'localhost',
     dialect: 'postgres',
 
@@ -11,4 +11,4 @@ const db = new Sequelize('postsdb', 'postgres', '12345', {
     }
 });
 
-module.exports = db;
+module.exports = postsdb;
